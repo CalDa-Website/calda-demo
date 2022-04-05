@@ -1,0 +1,2 @@
+async function update(){var response=await fetch("https://maki.gg/status/update");var data=await response.json();document.getElementById("servers").innerHTML=data.servers;document.getElementById("users").innerHTML=data.users;document.getElementById("channels").innerHTML=data.channels;for(let x in data.shards){document.getElementById(data.shards[x].shard).innerHTML=data.shards[x].latency+"ms";}}
+setInterval(update,30000);

@@ -1,0 +1,1426 @@
+﻿<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+<meta name="description" content="CalDa's status, response time, and statistics.">
+<meta name="keywords" content="admin, bot, dashboard, CalDa, website, discord, discordapp, status, stats, statistics, info, online, offline">
+<title>CalDa | Status</title>
+<meta name="theme-color" content="#F24443">
+<link rel="apple-touch-icon" href="static/app-assets/images/logo/logo.png">
+<link rel="shortcut icon" type="image/x-icon" href="static/app-assets/images/logo/logo.png">
+<link rel="shortcut icon" href="static/app-assets/images/logo/logo.png">
+<link href="css?family=Montserrat:300,400,500,600" rel="stylesheet">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="CalDa - The Discord Bot">
+<meta property="og:description" content="CalDa's status, response time, and statistics.">
+<meta property="og:image" content="/static/app-assets/images/logo/logo.png">
+<meta property="og:icon" content="/static/app-assets/images/logo/logo.png">
+<meta property="og:thumbnail" content="/static/app-assets/images/logo/logo.png">
+<meta property="og:url" content="https://calda.tk">
+<meta name="twitter:card" content="app">
+<meta name="twitter:title" content="CalDa - The Discord Bot">
+<meta name="twitter:description" content="CalDa's status, response time, and statistics.">
+<meta name="twitter:image" content="/static/app-assets/images/logo/logo.png">
+<meta name="twitter:icon" content="/static/app-assets/images/logo/logo.png">
+<meta name="twitter:thumbnail" content="/static/app-assets/images/logo/logo.png">
+
+
+<link rel="stylesheet" type="text/css" href="static/app-assets/vendors/css/vendors.min.css">
+
+
+<link rel="stylesheet" type="text/css" href="static/app-assets/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="static/app-assets/css/bootstrap-extended.css">
+<link rel="stylesheet" type="text/css" href="static/app-assets/css/colors.css">
+<link rel="stylesheet" type="text/css" href="static/app-assets/css/components.css">
+<link rel="stylesheet" type="text/css" href="static/app-assets/css/themes/dark-layout.css">
+
+<link rel="stylesheet" type="text/css" href="static/app-assets/css/core/menu/menu-types/vertical-menu.css">
+<link rel="stylesheet" type="text/css" href="static/app-assets/css/core/colors/palette-gradient.css">
+<link rel="stylesheet" type="text/css" href="static/app-assets/css/plugins/animate/animate.css">
+
+</head>
+
+
+<body class=" vertical-layout vertical-menu-modern 2-columns  navbar-floating footer-static   menu-collapsed" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
+
+<nav class="header-navbar navbar-expand-lg navbar navbar-with-menu floating-nav navbar-light navbar-shadow">
+<div class="navbar-wrapper">
+<div class="navbar-container content">
+<div class="navbar-collapse" id="navbar-mobile">
+<div class="mr-auto float-left bookmark-wrapper d-flex align-items-center">
+<ul class="nav navbar-nav">
+<li class="nav-item mobile-menu d-xl-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ficon feather icon-menu"></i></a></li>
+</ul>
+<ul class="nav navbar-nav bookmark-icons">
+
+
+
+	<li class="nav-item d-none d-lg-block"><a class="nav-link" href="index.htm" data-toggle="tooltip" data-placement="top" title="Home"><i class="ficon feather icon-home"></i></a></li>
+	<li class="nav-item d-none d-lg-block"><a class="nav-link" href="status.html" data-toggle="tooltip" data-placement="top" title="Status"><i class="ficon feather icon-server"></i></a></li>
+	<li class="nav-item d-none d-lg-block"><a class="nav-link" href="support.html" data-toggle="tooltip" data-placement="top" title="Support"><i class="ficon feather icon-message-square"></i></a></li>
+	</ul>
+	</div>
+	<ul class="nav navbar-nav float-right">
+	
+	<li class="nav-item">
+	<a href="invite.html" class="btn btn-outline-primary round my-1 mr-1 mb-1 waves-effect waves-light">Invite</a>
+	</li>
+	</ul>
+	</div>
+	</div>
+	</div>
+	</nav>
+	
+	
+	<div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+	<div class="navbar-header">
+	<ul class="nav navbar-nav flex-row">
+	<li class="nav-item mr-auto"><a class="navbar-brand">
+	<img src="static/app-assets/images/logo/logo.png" alt="x" height="30" width="30">
+	<h2 class="brand-text mb-0">CalDa</h2>
+	</a></li>
+	<li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="feather icon-x d-block d-xl-none font-medium-4 primary toggle-icon"></i><i class="toggle-icon feather icon-disc font-medium-4 d-none d-xl-block collapse-toggle-icon primary" data-ticon="icon-disc"></i></a></li>
+	</ul>
+	</div>
+	<div class="shadow-bottom"></div>
+	<div class="main-menu-content">
+	<ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+	<li><a href="index.htm" title="Home"><i class="feather icon-home warning"></i><span class="menu-title">Home</span></a>
+	</li>
+	<li><a href="status.html" title="Status"><i class="feather icon-server"></i><span class="menu-item">Status</span></a>
+	</li>
+	<li><a href="support.html" title="Support"><i class="feather icon-message-square"></i><span class="menu-item">Support</span></a>
+	</li>
+	<li><a href="commands.html" title="Commands"><i class="feather icon-list"></i><span class="menu-item">Commands</span></a>
+	</li>
+	<li><a href="vote.html" title="Vote"><i class="feather icon-check-square"></i><span class="menu-item" data-i18n="Vote">Vote</span></a>
+	</li>
+	<li><a href="team.html" title="Team"><i class="feather icon-users"></i><span class="menu-item">Team</span></a>
+	</li>
+	
+	</ul>
+	</div>
+	</div>
+
+
+<div class="app-content content">
+<div class="content-overlay"></div>
+<div class="header-navbar-shadow"></div>
+<div class="content-wrapper">
+<div class="content-header row">
+<div class="content-header-left col-md-9 col-12 mb-2">
+<div class="row breadcrumbs-top">
+<div class="col-12">
+<h2 class="content-header-title float-left mb-0">Status</h2>
+<div class="breadcrumb-wrapper col-12">
+<ol class="breadcrumb">
+<li class="breadcrumb-item">
+<a href="status.html">
+<i class="feather icon-home text-primary font-medium-3"></i>
+</a>
+</li>
+<li class="breadcrumb-item">Status
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="content-body">
+<h1 class="col-12 font-large-1 text-center mt-1">Status</h1>
+<h6 class="col-12 text-center mb-2">Statistics and status updates for all the CalDa services.</h6>
+<section id="bot">
+<div class="row">
+<div class="col-sm-12">
+<div id="administrationcommands" role="tablist" aria-multiselectable="true">
+<div class="card collapse-icon accordion-icon-rotate">
+<div class="card-header">
+<h4 class="card-title">Bot Status</h4>
+</div>
+<div class="card-content">
+<div class="card-body">
+<p>Operational</p>
+<center>
+
+<div style="width: 5%" class="badge badge-pill badge-success" data-toggle="tooltip" data-placement="bottom" title="No downtime recorded"> </div>
+<div style="width: 5%" class="badge badge-pill badge-success" data-toggle="tooltip" data-placement="bottom" title="No downtime recorded"> </div>
+<div style="width: 5%" class="badge badge-pill badge-success" data-toggle="tooltip" data-placement="bottom" title="No downtime recorded"> </div>
+<div style="width: 5%" class="badge badge-pill badge-success" data-toggle="tooltip" data-placement="bottom" title="No downtime recorded"> </div>
+<div style="width: 5%" class="badge badge-pill badge-success" data-toggle="tooltip" data-placement="bottom" title="No downtime recorded"> </div>
+<div style="width: 5%" class="badge badge-pill badge-success" data-toggle="tooltip" data-placement="bottom" title="No downtime recorded"> </div>
+<div style="width: 5%" class="badge badge-pill badge-success" data-toggle="tooltip" data-placement="bottom" title="No downtime recorded"> </div>
+<div style="width: 5%" class="badge badge-pill badge-success" data-toggle="tooltip" data-placement="bottom" title="No downtime recorded"> </div>
+<div style="width: 5%" class="badge badge-pill badge-success" data-toggle="tooltip" data-placement="bottom" title="No downtime recorded"> </div>
+<div style="width: 5%" class="badge badge-pill badge-success" data-toggle="tooltip" data-placement="bottom" title="No downtime recorded"> </div>
+<div style="width: 5%" class="badge badge-pill badge-success" data-toggle="tooltip" data-placement="bottom" title="No downtime recorded"> </div>
+<div style="width: 5%" class="badge badge-pill badge-success" data-toggle="tooltip" data-placement="bottom" title="No downtime recorded"> </div>
+<div style="width: 5%" class="badge badge-pill badge-success" data-toggle="tooltip" data-placement="bottom" title="No downtime recorded"> </div>
+<div style="width: 5%" class="badge badge-pill badge-success" data-toggle="tooltip" data-placement="bottom" title="No downtime recorded"> </div>
+</center>
+<p class="text-right"><i>7 day period</i></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="website">
+<div class="row">
+<div class="col-sm-12">
+<div id="administrationcommands" role="tablist" aria-multiselectable="true">
+<div class="card collapse-icon accordion-icon-rotate">
+<div class="card-header">
+<h4 class="card-title">Website Status</h4>
+</div>
+<div class="card-content">
+<div class="card-body">
+<p>Operational</p>
+<center>
+
+<div style="width: 5%" class="badge badge-pill badge-success" data-toggle="tooltip" data-placement="bottom" title="No downtime recorded"> </div>
+<div style="width: 5%" class="badge badge-pill badge-success" data-toggle="tooltip" data-placement="bottom" title="No downtime recorded"> </div>
+<div style="width: 5%" class="badge badge-pill badge-success" data-toggle="tooltip" data-placement="bottom" title="No downtime recorded"> </div>
+<div style="width: 5%" class="badge badge-pill badge-success" data-toggle="tooltip" data-placement="bottom" title="No downtime recorded"> </div>
+<div style="width: 5%" class="badge badge-pill badge-success" data-toggle="tooltip" data-placement="bottom" title="No downtime recorded"> </div>
+<div style="width: 5%" class="badge badge-pill badge-success" data-toggle="tooltip" data-placement="bottom" title="No downtime recorded"> </div>
+<div style="width: 5%" class="badge badge-pill badge-success" data-toggle="tooltip" data-placement="bottom" title="No downtime recorded"> </div>
+<div style="width: 5%" class="badge badge-pill badge-success" data-toggle="tooltip" data-placement="bottom" title="No downtime recorded"> </div>
+<div style="width: 5%" class="badge badge-pill badge-success" data-toggle="tooltip" data-placement="bottom" title="No downtime recorded"> </div>
+<div style="width: 5%" class="badge badge-pill badge-success" data-toggle="tooltip" data-placement="bottom" title="No downtime recorded"> </div>
+<div style="width: 5%" class="badge badge-pill badge-success" data-toggle="tooltip" data-placement="bottom" title="No downtime recorded"> </div>
+<div style="width: 5%" class="badge badge-pill badge-success" data-toggle="tooltip" data-placement="bottom" title="No downtime recorded"> </div>
+<div style="width: 5%" class="badge badge-pill badge-success" data-toggle="tooltip" data-placement="bottom" title="No downtime recorded"> </div>
+<div style="width: 5%" class="badge badge-pill badge-success" data-toggle="tooltip" data-placement="bottom" title="No downtime recorded"> </div>
+</center>
+<p class="text-right"><i>7 day period</i></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="statistics">
+<div class="row">
+<div class="col-lg-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header d-flex align-items-start pb-0">
+<div>
+<h2 id="servers" class="text-bold-700 mb-0">101</h2>
+<p>Servers</p>
+</div>
+<div class="avatar bg-rgba-primary p-50 m-0">
+<div class="avatar-content">
+<i class="feather icon-server text-primary font-medium-5"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header d-flex align-items-start pb-0">
+<div>
+<h2 id="channels" class="text-bold-700 mb-0">9,000</h2>
+<p>Channels</p>
+</div>
+<div class="avatar bg-rgba-warning p-50 m-0">
+<div class="avatar-content">
+<i class="feather icon-list text-warning font-medium-5"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header d-flex align-items-start pb-0">
+<div>
+<h2 id="users" class="text-bold-700 mb-0">3000+</h2>
+<p>Users</p>
+</div>
+<div class="avatar bg-rgba-success p-50 m-0">
+<div class="avatar-content">
+<i class="feather icon-users text-success font-medium-5"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header d-flex align-items-start pb-0">
+<div>
+<h2 class="text-bold-700 mb-0">99.9%</h2>
+<p>Uptime</p>
+</div>
+<div class="avatar bg-rgba-danger p-50 m-0">
+<div class="avatar-content">
+<i class="feather icon-activity text-danger font-medium-5"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<br>
+<center>
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; show_display()" data-cf-modified-fed9e3f468e694919657af2f-=""><i class="feather icon-plus font-large-2 danger"></i></a>
+</center>
+<br><br>
+<section id="shards" class="show_detailed" style="display: none;">
+<h1 class="col-12 font-large-1 text-center mt-1">Shards</h1>
+<h6 class="col-12 text-center mb-2">Check the status of CalDa's shards to detect partial outages. [Opening soon]</h6>
+<div class="row">
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Afghanite</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 0 </span> &nbsp; <span id="0">120ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 1 </span> &nbsp; <span id="1">119ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 2 </span> &nbsp; <span id="2">117ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 3 </span> &nbsp; <span id="3">125ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Agate</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 4 </span> &nbsp; <span id="4">122ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 5 </span> &nbsp; <span id="5">135ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 6 </span> &nbsp; <span id="6">118ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 7 </span> &nbsp; <span id="7">114ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Alexandrite</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 8 </span> &nbsp; <span id="8">120ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 9 </span> &nbsp; <span id="9">187ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 10 </span> &nbsp; <span id="10">113ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 11 </span> &nbsp; <span id="11">118ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Amazonite</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 12 </span> &nbsp; <span id="12">134ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 13 </span> &nbsp; <span id="13">122ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 14 </span> &nbsp; <span id="14">119ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 15 </span> &nbsp; <span id="15">149ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Amber</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 16 </span> &nbsp; <span id="16">117ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 17 </span> &nbsp; <span id="17">138ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 18 </span> &nbsp; <span id="18">113ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 19 </span> &nbsp; <span id="19">118ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Amethyst</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 20 </span> &nbsp; <span id="20">119ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 21 </span> &nbsp; <span id="21">116ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 22 </span> &nbsp; <span id="22">114ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 23 </span> &nbsp; <span id="23">117ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Ametrine</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 24 </span> &nbsp; <span id="24">116ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 25 </span> &nbsp; <span id="25">117ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 26 </span> &nbsp; <span id="26">121ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 27 </span> &nbsp; <span id="27">113ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Ammolite</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 28 </span> &nbsp; <span id="28">117ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 29 </span> &nbsp; <span id="29">120ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 30 </span> &nbsp; <span id="30">116ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 31 </span> &nbsp; <span id="31">116ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Andalusite</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 32 </span> &nbsp; <span id="32">115ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 33 </span> &nbsp; <span id="33">123ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 34 </span> &nbsp; <span id="34">129ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 35 </span> &nbsp; <span id="35">115ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Apatite</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 36 </span> &nbsp; <span id="36">122ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 37 </span> &nbsp; <span id="37">164ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 38 </span> &nbsp; <span id="38">136ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 39 </span> &nbsp; <span id="39">117ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Aquamarine</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 40 </span> &nbsp; <span id="40">117ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 41 </span> &nbsp; <span id="41">126ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 42 </span> &nbsp; <span id="42">116ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 43 </span> &nbsp; <span id="43">116ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Aventurine</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 44 </span> &nbsp; <span id="44">117ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 45 </span> &nbsp; <span id="45">117ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 46 </span> &nbsp; <span id="46">117ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 47 </span> &nbsp; <span id="47">117ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Azurite</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 48 </span> &nbsp; <span id="48">114ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 49 </span> &nbsp; <span id="49">127ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 50 </span> &nbsp; <span id="50">116ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 51 </span> &nbsp; <span id="51">124ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Bastnasite</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 52 </span> &nbsp; <span id="52">118ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 53 </span> &nbsp; <span id="53">115ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 54 </span> &nbsp; <span id="54">127ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 55 </span> &nbsp; <span id="55">138ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Benitoite</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 56 </span> &nbsp; <span id="56">118ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 57 </span> &nbsp; <span id="57">117ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 58 </span> &nbsp; <span id="58">116ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 59 </span> &nbsp; <span id="59">131ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Beryl</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 60 </span> &nbsp; <span id="60">162ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 61 </span> &nbsp; <span id="61">117ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 62 </span> &nbsp; <span id="62">143ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 63 </span> &nbsp; <span id="63">118ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Bloodstone</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 64 </span> &nbsp; <span id="64">120ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 65 </span> &nbsp; <span id="65">127ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 66 </span> &nbsp; <span id="66">118ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 67 </span> &nbsp; <span id="67">115ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Calcite</h4>
+ </div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 68 </span> &nbsp; <span id="68">119ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 69 </span> &nbsp; <span id="69">153ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 70 </span> &nbsp; <span id="70">123ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 71 </span> &nbsp; <span id="71">119ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Carnelian</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 72 </span> &nbsp; <span id="72">122ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 73 </span> &nbsp; <span id="73">122ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 74 </span> &nbsp; <span id="74">115ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 75 </span> &nbsp; <span id="75">115ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Cavansite</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 76 </span> &nbsp; <span id="76">116ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 77 </span> &nbsp; <span id="77">124ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 78 </span> &nbsp; <span id="78">119ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 79 </span> &nbsp; <span id="79">122ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Chalcedony</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 80 </span> &nbsp; <span id="80">123ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 81 </span> &nbsp; <span id="81">156ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 82 </span> &nbsp; <span id="82">118ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 83 </span> &nbsp; <span id="83">119ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Charoite</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 84 </span> &nbsp; <span id="84">134ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 85 </span> &nbsp; <span id="85">117ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 86 </span> &nbsp; <span id="86">115ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 87 </span> &nbsp; <span id="87">119ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Chrysoberyl</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 88 </span> &nbsp; <span id="88">124ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 89 </span> &nbsp; <span id="89">118ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 90 </span> &nbsp; <span id="90">120ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 91 </span> &nbsp; <span id="91">119ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Chrysocolla</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 92 </span> &nbsp; <span id="92">118ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 93 </span> &nbsp; <span id="93">119ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 94 </span> &nbsp; <span id="94">118ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 95 </span> &nbsp; <span id="95">119ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Chrysoprase</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 96 </span> &nbsp; <span id="96">113ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 97 </span> &nbsp; <span id="97">115ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 98 </span> &nbsp; <span id="98">116ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 99 </span> &nbsp; <span id="99">113ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Citrine</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 100 </span> &nbsp; <span id="100">131ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 101 </span> &nbsp; <span id="101">114ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 102 </span> &nbsp; <span id="102">118ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 103 </span> &nbsp; <span id="103">114ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Coral</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 104 </span> &nbsp; <span id="104">123ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 105 </span> &nbsp; <span id="105">158ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 106 </span> &nbsp; <span id="106">119ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 107 </span> &nbsp; <span id="107">120ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Danburite</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 108 </span> &nbsp; <span id="108">119ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 109 </span> &nbsp; <span id="109">120ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 110 </span> &nbsp; <span id="110">122ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 111 </span> &nbsp; <span id="111">116ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Diamond</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 112 </span> &nbsp; <span id="112">121ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 113 </span> &nbsp; <span id="113">124ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 114 </span> &nbsp; <span id="114">115ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 115 </span> &nbsp; <span id="115">115ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Diaspore</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 116 </span> &nbsp; <span id="116">152ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 117 </span> &nbsp; <span id="117">129ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 118 </span> &nbsp; <span id="118">122ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 119 </span> &nbsp; <span id="119">115ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Dioptase</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 120 </span> &nbsp; <span id="120">116ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 121 </span> &nbsp; <span id="121">134ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 122 </span> &nbsp; <span id="122">122ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 123 </span> &nbsp; <span id="123">118ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Druzy</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 124 </span> &nbsp; <span id="124">117ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 125 </span> &nbsp; <span id="125">162ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 126 </span> &nbsp; <span id="126">121ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 127 </span> &nbsp; <span id="127">122ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Emerald</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 128 </span> &nbsp; <span id="128">130ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 129 </span> &nbsp; <span id="129">113ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 130 </span> &nbsp; <span id="130">124ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 131 </span> &nbsp; <span id="131">120ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Eudialyte</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 132 </span> &nbsp; <span id="132">137ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 133 </span> &nbsp; <span id="133">117ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 134 </span> &nbsp; <span id="134">115ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 135 </span> &nbsp; <span id="135">114ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Fluorite</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 136 </span> &nbsp; <span id="136">124ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 137 </span> &nbsp; <span id="137">227ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 138 </span> &nbsp; <span id="138">117ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 139 </span> &nbsp; <span id="139">122ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Fuchsite</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 140 </span> &nbsp; <span id="140">118ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 141 </span> &nbsp; <span id="141">118ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 142 </span> &nbsp; <span id="142">120ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 143 </span> &nbsp; <span id="143">117ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Garnet</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 144 </span> &nbsp; <span id="144">115ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 145 </span> &nbsp; <span id="145">121ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 146 </span> &nbsp; <span id="146">118ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 147 </span> &nbsp; <span id="147">143ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Hackmanite</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 148 </span> &nbsp; <span id="148">119ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 149 </span> &nbsp; <span id="149">115ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 150 </span> &nbsp; <span id="150">120ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 151 </span> &nbsp; <span id="151">148ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Heliodor</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 152 </span> &nbsp; <span id="152">118ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 153 </span> &nbsp; <span id="153">115ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 154 </span> &nbsp; <span id="154">121ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 155 </span> &nbsp; <span id="155">120ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Hematite</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 156 </span> &nbsp; <span id="156">118ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 157 </span> &nbsp; <span id="157">119ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 158 </span> &nbsp; <span id="158">120ms</span>
+</li>
+<li class="list-group-item d-flex">
+ <span class="badge badge-pill badge-success"> 159 </span> &nbsp; <span id="159">120ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Hiddenite</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 160 </span> &nbsp; <span id="160">115ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 161 </span> &nbsp; <span id="161">121ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 162 </span> &nbsp; <span id="162">116ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 163 </span> &nbsp; <span id="163">157ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Howlite</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 164 </span> &nbsp; <span id="164">115ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 165 </span> &nbsp; <span id="165">118ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 166 </span> &nbsp; <span id="166">116ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 167 </span> &nbsp; <span id="167">123ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Iolite</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 168 </span> &nbsp; <span id="168">121ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 169 </span> &nbsp; <span id="169">114ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 170 </span> &nbsp; <span id="170">118ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 171 </span> &nbsp; <span id="171">123ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-12">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Ironstone</h4>
+</div>
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 172 </span> &nbsp; <span id="172">118ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 173 </span> &nbsp; <span id="173">117ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 174 </span> &nbsp; <span id="174">118ms</span>
+</li>
+<li class="list-group-item d-flex">
+<span class="badge badge-pill badge-success"> 175 </span> &nbsp; <span id="175">118ms</span>
+</li>
+</ul>
+<br>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+
+<div class="sidenav-overlay"></div>
+<div class="drag-target"></div>
+
+<footer class="footer footer-static footer-light">
+<p class="clearfix blue-grey lighten-2 mb-0"><span class="float-md-left d-block d-md-inline-block mt-25">Copyright © 2022 Calda-Holdings. All rights Reserved</span><a href="about.html" class="clearfix blue-grey lighten-2 mb-0"><span class="float-md-right d-none d-md-block">Terms of service</span></a></p>
+</footer>
+
+
+<script src="static/app-assets/vendors/js/vendors.min.js" type="fed9e3f468e694919657af2f-text/javascript"></script>
+
+
+
+
+<script src="static/app-assets/js/core/app-menu.js" type="fed9e3f468e694919657af2f-text/javascript"></script>
+<script src="static/app-assets/js/core/app.js" type="fed9e3f468e694919657af2f-text/javascript"></script>
+<script src="static/app-assets/js/scripts/components.js" type="fed9e3f468e694919657af2f-text/javascript"></script>
+<script src="static/app-assets/js/scripts/tooltip/tooltip.js" type="fed9e3f468e694919657af2f-text/javascript"></script>
+
+
+<script src="static/app-assets/js/scripts/api/status.js" type="fed9e3f468e694919657af2f-text/javascript"></script>
+
+
+<script type="fed9e3f468e694919657af2f-text/javascript">
+		function show_display(){
+		  channels = document.querySelector('.show_detailed');
+		  
+		  if(channels.style.display == 'none'){
+			  channels.style.display = 'block'
+		  }
+		  else if(channels.style.display == 'block'){
+			  channels.style.display = 'none'
+		  };
+		}
+	</script>
+
+<script src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="fed9e3f468e694919657af2f-|49" defer=""></script><script defer="" src="beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6ebc8d219d1fdbc8","version":"2021.12.0","r":1,"token":"adb6adf7b1b143ee8ff613e9a6381443","si":100}' crossorigin="anonymous"></script>
+</body>
+
+</html>
